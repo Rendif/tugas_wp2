@@ -9,7 +9,7 @@
 <meta name="author" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<title>Ghoibsilents</title>
+<title>Balmond official</title>
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/animate.css">
@@ -43,7 +43,7 @@
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="index.html" class="navbar-brand"><span>Ghoibsilents</span></a>
+			<a href="index.html" class="navbar-brand"><span>Balmond official</span></a>
 		</div>
 
 		<div class="collapse navbar-collapse">
@@ -70,11 +70,10 @@
                </div>
 
 				<div align="center" style=" margin-top:200px">
-				<form action="prosesinput.php" method="post" enctype="multipart/form-data" name="form_data_karyawan">
+				<form action="prosesinput.php" method="POST" enctype="multipart/form-data" name="form_data_karyawan">
 				<table width="30%" border="0" cellspacing="0" cellpadding="10" id="wrap">
 
-         <tr><td>Foto</td>
-         <td><input type="file" name="foto"></td></tr>
+         
          <tr><td>NIK</td>
          <td><input type="text" name="nik" placeholder="Nik" required=""></td></tr>
          <tr><td>Nama</td>
@@ -82,7 +81,20 @@
          <tr><td>Tgl Lahir</td>
          <td><label>
          <input type="date" name="tgl_lahir" required="">
-         </label></td></tr>
+         </label></td></tr> 
+         <tr><td>Agama</td>
+         <td><select name="agama">
+             <option value=""></option>
+             <option value="Islam">Islam</option>
+             <option value="Kristen">Kristen</option>
+                <option value="Hindu">Hindu</option>
+                   <option value="Budha">Budha</option>
+          <tr><td>Status</td>
+         <td><select name="status">
+             <option value=""></option>
+             <option value="Belum menikah">Belum menikah</option>
+             <option value="Menikah">Menikah</option>
+             
          <tr><td>Alamat</td>
          <td><input type="text" name="alamat" placeholder="Alamat" required=""></td></tr>
          <tr><td>Divisi</td>
@@ -94,7 +106,8 @@
          <tr><td>Email</td>
          <td><input type="email" name="email" placeholder="Email" required></td>
          </tr>
-        
+        <tr><td>Foto</td>
+         <td><input type="file" name="foto"></td></tr>
         </table>
          
        <div class="btnn">
@@ -114,7 +127,7 @@
 
                <div class="col-md-8 col-sm-6">
                     <div class="wow fadeInUp footer-copyright" data-wow-delay="0.4s">
-                         <p>Ganjar Okta Mahendra
+                         <p>Rendi firnando
                          <span>||</span> 
                          Tugas WP2</p>
                     </div>

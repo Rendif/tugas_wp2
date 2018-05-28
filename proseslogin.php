@@ -11,7 +11,7 @@ if ($row['username'] == $username AND $row['password'] == $password)
 	session_start();
 	$_SESSION['username'] = $row['username'];
 	$_SESSION['password'] = $row['password'];
-	header('location:../goibsilents/admin.php');
+	header('location:./admin.php');
 
 }
 else

@@ -9,7 +9,7 @@
 <meta name="author" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<title>Ghoibsilents</title>
+<title>Balmond official</title>
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/animate.css">
@@ -69,6 +69,8 @@
 <td width="10%" bgcolor="#b0d5d0"><div align="center">Foto</td>
 <td width="10%" bgcolor="#b0d5d0"><div align="center">Nama</td>
 <td width="10%" bgcolor="#b0d5d0"><div align="center">Tgl Lahir</td>
+<td width="8%" bgcolor="#b0d5d0"><div align="center">Agama</td>
+<td width="8%" bgcolor="#b0d5d0"><div align="center">Status</td>
 <td width="8%" bgcolor="#b0d5d0"><div align="center">Alamat</td>
 <td width="8%" bgcolor="#b0d5d0"><div align="center">Divisi</td>
 <td width="10%" bgcolor="#b0d5d0"><div align="center">Email</td>
@@ -88,6 +90,8 @@ while($data = mysqli_fetch_array($sql))
   echo "<td><img src=images/".$data['foto']." 'width='50' height='50'></td>";  
   echo "<td>".$data['nama']."</td>"; 
   echo "<td>".$data['tgl_lahir']."</td>"; 
+  echo "<td>".$data['agama']."</td>";
+  echo "<td>".$data['status']."</td>";
    echo "<td>".$data['alamat']."</td>";
   echo "<td>".$data['divisi']."</td>";
   echo "<td>".$data['email']."</td>"; 
@@ -109,7 +113,7 @@ while($data = mysqli_fetch_array($sql))
 
                <div class="col-md-8 col-sm-6">
                     <div class="wow fadeInUp footer-copyright" data-wow-delay="0.4s">
-                         <p>Ganjar Okta Mahendra
+                         <p>Rendi firnando
                          <span>||</span> 
                          Tugas WP2</p>
                     </div>

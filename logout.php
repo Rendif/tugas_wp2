@@ -1,7 +1,7 @@
 <?php
 
 session_start(); //memulai membaca sesi
-unset($_SESSION['nama_lengkap']); //menghapus nilai sesi yang diregistrasi
+unset($_SESSION['nama']); //menghapus nilai sesi yang diregistrasi
 unset($_SESSION['login']); //menghapus nilai sesi yang diregistrasi
 unset($_SESSION['proseslogin']);
 unset($_SESSION['id_admin']);

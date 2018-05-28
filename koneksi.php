@@ -1,7 +1,7 @@
 <?php
 
 $host     = 'localhost';
-$database = 'goibsilents';
+$database = 'rendi_wp2';
 $user     = 'root';
 $password = '';
 

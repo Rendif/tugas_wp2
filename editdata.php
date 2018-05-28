@@ -9,7 +9,7 @@
 <meta name="author" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<title>Ghoibsilents</title>
+<title>Balmond official</title>
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/animate.css">
@@ -43,7 +43,7 @@
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="index.html" class="navbar-brand"><span>Ghoibsilents</span></a>
+			<a href="index.html" class="navbar-brand"><span>Balmond official</span></a>
 		</div>
 
 		<div class="collapse navbar-collapse">
@@ -88,6 +88,28 @@ $data=mysqli_fetch_array(mysqli_query($koneksi,"SELECT * FROM tb_karyawan where 
 		 <td><label>
 		 <td><input type="date" name="tgl_lahir" value="<?php echo $karyawan['tgl_lahir'] ?>"></td>
 		 </label></td></tr>
+		 <tr><td>Agama</td>
+          	 <td> <select name="agama"> <option value="">-pilih</option><?php
+			 $query=mysqli_query($koneksi,"select*from agama");
+			 while($divisi=mysqli_fetch_array($query))
+			 {
+		 	 if($divisi['agama']==$divisi['agama'])
+			  {$status="selected";}
+			 else {$status="";}
+			 echo "<option value='$divisi[divisi]' $status>$divisi[divisi]</option>";
+			 }
+		 ?></select></td>
+		 <tr><td>Status</td>
+          	 <td> <select name="Status"> <option value="">-pilih</option><?php
+			 $query=mysqli_query($koneksi,"select*from status");
+			 while($divisi=mysqli_fetch_array($query))
+			 {
+		 	 if($divisi['status']==$divisi['status'])
+			  {$status="selected";}
+			 else {$status="";}
+			 echo "<option value='$divisi[divisi]' $status>$divisi[divisi]</option>";
+			 }
+		 ?></select></td>
          <tr><td>Alamat</td>
 		 <td><input type="text" name="alamat" value="<?php echo $karyawan['alamat'] ?>"></td>
 		 <tr><td>Divisi</td>
@@ -121,7 +143,7 @@ $data=mysqli_fetch_array(mysqli_query($koneksi,"SELECT * FROM tb_karyawan where 
 
                <div class="col-md-8 col-sm-6">
                     <div class="wow fadeInUp footer-copyright" data-wow-delay="0.4s">
-                         <p>Ganjar Okta Mahendra
+                         <p>Rendi firnando
                          <span>||</span> 
                          Tugas WP2</p>
                     </div>
